@@ -1,9 +1,13 @@
 package com.example.pignatta_roll_the_dice
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -32,5 +36,15 @@ class SecondActivity : AppCompatActivity() {
         }
         imageViewSecond.setImageResource(resource)
         Log.d("SECOND", "FINITO DISEGNO DADO")
+
+        var btnWin : Button = findViewById(R.id.btnActivitySecondWin)
+        btnWin.setOnClickListener(View.OnClickListener {
+            var toast : Toast = Toast.makeText(this, "AVRAI VINTOOO?!?!?!", Toast.LENGTH_LONG);
+            toast.show();
+            var mioIntent : Intent = Intent(this, ThirdActivity::class.java);
+            var numEstra = random
+            mioIntent.putExtra("NUMESTRATTO", numEstra)
+            startActivity(mioIntent)
+        })
         }
-    }
+}
