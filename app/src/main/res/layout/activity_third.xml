@@ -7,16 +7,32 @@
     android:layout_height="match_parent"
     tools:context=".ThirdActivity">
 
+    <ImageView
+        android:id="@+id/imageViewThirdActivity"
+        android:layout_width="364dp"
+        android:layout_height="232dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewActivityThirdWin"
+        app:layout_constraintVertical_bias="0.4"
+        tools:srcCompat="@drawable/lose" />
+
     <TextView
         android:id="@+id/textViewActivityThirdWin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="cursive"
+        android:layout_width="307dp"
+        android:layout_height="91dp"
+        android:fontFamily="@font/bangers"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textColor="#673AB7"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
